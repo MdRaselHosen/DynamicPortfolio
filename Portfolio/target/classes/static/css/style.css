@@ -1,0 +1,314 @@
+:root{
+    --primary:#3DCFD3;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --light:#F2F2F2;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialised;
+}
+
+header{
+    background-color: #161616;
+    color: aliceblue;
+    padding: 1rem 0;
+    height: 5rem;
+
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0.7rem 2rem;
+}
+nav .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+nav .logo:hover{
+    color: rgb(78, 139, 192);
+    font-size: 25px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(78, 139, 192) ;
+    font-size: large;
+}
+/* -------- Nav over------ */
+.hero{
+    background-color: #161616;
+    display: flex;
+    padding-left: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+
+}
+.right{
+    padding-left: 4rem;
+    padding-top: 3rem;
+}
+h6{
+    font-size: 30px;
+}
+/* ---- for image ---- */
+.circular-image {
+    width: 400px; /* Adjust the size */
+    height: 400px; /* Make width and height equal for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image fits within the circle */
+    object-fit: cover; /* Ensures the image scales nicely within the circle */
+    border: 4px solid #87a2be; /* Optional border for styling */
+}
+/* ----- image over --- */
+/* ---- for typing effect ----- */
+:root {
+    --steps: 16;
+    --background: #1d1f20;
+}
+
+.typing {
+    font-family: 'Inconsolata', Consolas, monospace;
+    font-size: 20px;
+    color: #d7b94c;
+
+    position: relative;
+    &::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        color: white;
+        background: var(--background);
+        animation: typing 4s steps(var(--steps)) forwards,
+        caret 1s infinite;
+    }
+}
+
+@keyframes typing {
+    to { width: 0 }
+}
+@keyframes caret {
+    50% { color: transparent }
+}
+
+/* ---- End of typing effect ---- */
+
+/* Design for button --- */
+
+.download-btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; /* Primary blue */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn svg {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* ------- about section ------ */
+.about {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0078d4;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.about-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #0078d4;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.about-content .btn:hover {
+    background: #005bb5;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* last option */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.projects{
+    height: 20rem;
+    background-color: aliceblue;
+
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.project-card {
+    height: 10rem;
+    background-color: rgb(184, 194, 204);
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.contact {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #0078d4;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn {
+    display: inline-block;
+    background: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #005bb5;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
